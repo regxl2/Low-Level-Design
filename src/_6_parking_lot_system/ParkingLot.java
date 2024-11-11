@@ -45,21 +45,10 @@ public class ParkingLot{
         }
     }
 
-    private VehicleType stringToVehicleType(String type){
-        String lowerType = type.toLowerCase();
-        if( lowerType.equals("car")){
-            return CAR;
-        }
-        else if(lowerType.equals("bike")){
-            return BIKE;
-        }
-        else return TRUCK;
-    }
-
-    void parkVehicle(int parkingLevelId, String vehicleNumber, String vehicleType){
+    void parkVehicle(int parkingLevelId, String vehicleNumber, VehicleType vehicleType){
         if(parkingLevelMap.containsKey(parkingLevelId)){
             ParkingLevel parkingLevel = parkingLevelMap.get(parkingLevelId);
-            if(parkingLevel.parkVehicle(vehicleNumber, stringToVehicleType(vehicleType))){
+            if(parkingLevel.parkVehicle(vehicleNumber, vehicleType)){
                 System.out.println("Vehicle parked successfully");
             }
             else{

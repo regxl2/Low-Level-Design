@@ -1,4 +1,4 @@
-package _5_tic_tac_toe.model;
+package _5_tic_tac_toe;
 
 public enum PieceType {
     X,
