@@ -5,8 +5,6 @@ import _6_parking_lot_system.vehicle.VehicleType;
 
 import java.util.*;
 
-import static _6_parking_lot_system.vehicle.VehicleType.*;
-
 public class ParkingLot{
     private final Map<Integer, ParkingLevel> parkingLevelMap;
     private final Scanner scanner;
