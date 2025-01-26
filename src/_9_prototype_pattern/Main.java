@@ -1,4 +1,4 @@
-package _9_protype_pattern;
+package _9_prototype_pattern;
 
 public class Main {
 

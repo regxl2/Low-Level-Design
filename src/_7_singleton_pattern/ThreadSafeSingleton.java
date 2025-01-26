@@ -8,7 +8,7 @@ public class ThreadSafeSingleton {
         System.out.println("Thread safe singleton's constructor is called");
     }
 //     using synchronized on method can cause overhead if getInstance method is
-//     frequently called, in that case we synchronized keyword on the block.
+//     frequently called, in that case we use synchronized keyword on the block.
 //    public static synchronized ThreadSafeSingleton getInstance(){
 //        if(instance == null){
 //            instance = new ThreadSafeSingleton();

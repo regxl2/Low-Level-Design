@@ -5,7 +5,7 @@ import _11_bridge_pattern.device.Device;
 public class BasicRemote implements Remote{
     protected Device device;
 
-    BasicRemote(Device device){
+    public BasicRemote(Device device){
         this.device = device;
     }
 

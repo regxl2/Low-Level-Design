@@ -1,7 +1,7 @@
 package _11_bridge_pattern.remote;
 
 // Abstraction
-interface Remote {
+public interface Remote {
     void power();
     void volumeDown();
     void volumeUp();
